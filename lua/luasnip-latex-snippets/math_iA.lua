@@ -157,6 +157,8 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "||", name = "mid" }, " \\mid "),
     parse_snippet({ trig = "Nn", name = "cap" }, "\\cap "),
     parse_snippet({ trig = "bmat", name = "bmat" }, "\\begin{bmatrix} $1 \\end{bmatrix} $0"),
+    parse_snippet({ trig = "pmat", name = "pmat" }, "\\begin{pmatrix} $1 \\end{pmatrix} $0"),
+    parse_snippet({ trig = "mmat", name = "mmat" }, "\\begin{matrix} $1 \\end{matrix} $0"),
     parse_snippet({ trig = "uuu", name = "bigcup" }, "\\bigcup_{${1:i \\in ${2: I}}} $0"),
     parse_snippet({ trig = "DD", name = "D" }, "\\mathbb{D}"),
     parse_snippet({ trig = "HH", name = "H" }, "\\mathbb{H}"),
