@@ -72,6 +72,10 @@ function M.retrieve(is_math)
       { trig = "sequence", name = "Sequence indexed by n, from m to infinity" },
       "(${1:a}_${2:n})_{${2:n}=${3:m}}^{${4:\\infty}}"
     ),
+
+    parse_snippet({ trig = "_im", name = "implies" }, "\\implies"),
+    parse_snippet({ trig = "_to", name = "to", priority = 100 }, "\\to "),
+    parse_snippet({ trig = "_lto>", name = "long to", priority = 100 }, "\\longrightarrow "),
   }
 end
 
